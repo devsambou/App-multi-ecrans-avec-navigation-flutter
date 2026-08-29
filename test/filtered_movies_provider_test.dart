@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:movie_app/data/models/movie.dart';
 import 'package:movie_app/features/movies/providers/movie_providers.dart';
 
 void main() {
@@ -32,9 +33,9 @@ void main() {
     filtered = container.read(filteredMoviesProvider);
     var filteredMovies = filtered.when(
       data: (movies) => movies,
-      loading: () => <dynamic>[],
-      error: (error, stack) => <dynamic>[],
-    ) as List;
+      loading: () => <Movie>[],
+      error: (error, stack) => <Movie>[],
+    );
 
     // Vérifier que seuls les films contenant "Écho" dans le titre sont retournés
     for (var movie in filteredMovies) {
@@ -52,9 +53,9 @@ void main() {
     filtered = container.read(filteredMoviesProvider);
     filteredMovies = filtered.when(
       data: (movies) => movies,
-      loading: () => <dynamic>[],
-      error: (error, stack) => <dynamic>[],
-    ) as List;
+      loading: () => <Movie>[],
+      error: (error, stack) => <Movie>[],
+    );
 
     // Vérifier que seuls les films du genre "Drame" sont retournés
     for (var movie in filteredMovies) {
