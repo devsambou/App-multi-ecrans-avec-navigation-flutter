@@ -1,0 +1,25 @@
+# Fichiers générés par Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.pub-cache/
+.pub/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Plateformes (générées par flutter create)
+android/
+ios/
+linux/
+macos/
+windows/
+web/
+
+# Système
+.DS_Store
+Thumbs.db

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "m1",
+    "title": "L'Écho du Silence",
+    "genre": "Drame",
+    "releaseYear": 2019,
+    "durationMinutes": 118,
+    "rating": 4.3,
+    "director": "Camille Vasseur",
+    "cast": ["Julien Marchand", "Lena Dubosc", "Amir Kessler"],
+    "posterUrl": "https://picsum.photos/seed/echo-silence/400/600",
+    "synopsis": "Un pianiste devenu sourd tente de renouer avec sa fille à travers la musique qu'il ne peut plus entendre."
+  },
+  {
+    "id": "m2",
+    "title": "Nuits Électriques",
+    "genre": "Science-Fiction",
+    "releaseYear": 2022,
+    "durationMinutes": 132,
+    "rating": 4.6,
+    "director": "Théo Renaudin",
+    "cast": ["Sofia Marquez", "David Okoye", "Elyas Ferrand"],
+    "posterUrl": "https://picsum.photos/seed/nuits-electriques/400/600",
+    "synopsis": "Dans une mégapole où la nuit ne tombe jamais, un ingénieur découvre que la ville entière est une simulation."
+  },
+  {
+    "id": "m3",
+    "title": "Le Dernier Voyage",
+    "genre": "Aventure",
+    "releaseYear": 2018,
+    "durationMinutes": 145,
+    "rating": 4.1,
+    "director": "Nora Sinclair",
+    "cast": ["Marco Belline", "Aïcha Ferrand", "Tom Delacroix"],
+    "posterUrl": "https://picsum.photos/seed/dernier-voyage/400/600",
+    "synopsis": "Un équipage de chercheurs d'épaves affronte une tempête pour retrouver un navire disparu depuis un siècle."
+  },
+  {
+    "id": "m4",
+    "title": "Fragments de Lumière",
+    "genre": "Romance",
+    "releaseYear": 2021,
+    "durationMinutes": 104,
+    "rating": 3.9,
+    "director": "Hugo Lindqvist",
+    "cast": ["Chloé Anselme", "Ravi Chandran"],
+    "posterUrl": "https://picsum.photos/seed/fragments-lumiere/400/600",
+    "synopsis": "Deux photographes que tout oppose se retrouvent chaque année au même endroit, sans jamais se parler."
+  },
+  {
+    "id": "m5",
+    "title": "Horizon Perdu",
+    "genre": "Thriller",
+    "releaseYear": 2023,
+    "durationMinutes": 121,
+    "rating": 4.4,
+    "director": "Sarah Kowalski",
+    "cast": ["Nadia Aubry", "Léo Fontaine", "Marcus Webb"],
+    "posterUrl": "https://picsum.photos/seed/horizon-perdu/400/600",
+    "synopsis": "Une agente d'assurance enquête sur une série de disparitions qui la mène à remettre en question sa propre mémoire."
+  },
+  {
+    "id": "m6",
+    "title": "La Chute des Anges",
+    "genre": "Action",
+    "releaseYear": 2020,
+    "durationMinutes": 128,
+    "rating": 4.0,
+    "director": "Diego Ferreira",
+    "cast": ["Karim Bensalem", "Ingrid Solberg"],
+    "posterUrl": "https://picsum.photos/seed/chute-anges/400/600",
+    "synopsis": "Un ancien pilote de chasse doit protéger un convoi humanitaire à travers une zone de conflit sans autorisation officielle."
+  },
+  {
+    "id": "m7",
+    "title": "Mémoires de Sable",
+    "genre": "Drame",
+    "releaseYear": 2017,
+    "durationMinutes": 110,
+    "rating": 4.2,
+    "director": "Yasmine Choukri",
+    "cast": ["Farid Meziane", "Odile Bertrand"],
+    "posterUrl": "https://picsum.photos/seed/memoires-sable/400/600",
+    "synopsis": "Une archéologue revient sur les lieux de son enfance pour affronter des souvenirs qu'elle avait enfouis."
+  },
+  {
+    "id": "m8",
+    "title": "Le Souffle du Nord",
+    "genre": "Aventure",
+    "releaseYear": 2024,
+    "durationMinutes": 137,
+    "rating": 4.5,
+    "director": "Erik Solvang",
+    "cast": ["Ingrid Solberg", "Malik Toure", "Freya Larsen"],
+    "posterUrl": "https://picsum.photos/seed/souffle-nord/400/600",
+    "synopsis": "Une expédition scientifique en Arctique se transforme en course contre la montre après un accident de motoneige."
+  }
+]

@@ -1,0 +1,31 @@
+name: movie_app
+description: >
+  Application Flutter multi-écrans (catalogue de films) démontrant une
+  architecture propre : séparation UI/data, navigation GoRouter, state
+  management Riverpod, thème clair/sombre persistant et design responsive.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  # Navigation par routes nommées, paramètres d'URL, deep-linking.
+  go_router: ^14.2.0
+  # State management compile-safe, testable sans BuildContext.
+  flutter_riverpod: ^2.5.1
+  # Persistance légère (choix du thème clair/sombre).
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/movies.json
