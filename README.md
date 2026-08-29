@@ -4,8 +4,8 @@ Application Flutter multi-écrans démontrant une architecture propre : séparat
 
 ## Aperçu
 
-| Liste (mobile) | Liste (tablette) | Détail | Formulaire |
-|---|---|---|---|
+| Liste (mobile)                | Liste (tablette)              | Détail                   | Formulaire             |
+| ----------------------------- | ----------------------------- | ------------------------ | ---------------------- |
 | _screenshots/list_mobile.png_ | _screenshots/list_tablet.png_ | _screenshots/detail.png_ | _screenshots/form.png_ |
 
 > Remplace ces liens par tes propres captures d'écran une fois l'app lancée (voir dossier `screenshots/`).
@@ -60,12 +60,12 @@ lib/
 
 ## Les 4 écrans
 
-| Écran | Route | Rôle |
-|---|---|---|
-| **Liste** | `/` (name: `list`) | Affiche les films, recherche texte, filtres par genre, accès favoris et ajout |
-| **Détail** | `/movie/:id` (name: `detail`) | Affiche les infos complètes d'un film récupéré par son `id` |
-| **Formulaire** | `/form` (name: `form`) | Ajoute un nouveau film avec validation de 5 champs |
-| **Favoris** | `/favorites` (name: `favorites`) | Liste filtrée des films marqués comme favoris |
+| Écran          | Route                            | Rôle                                                                          |
+| -------------- | -------------------------------- | ----------------------------------------------------------------------------- |
+| **Liste**      | `/` (name: `list`)               | Affiche les films, recherche texte, filtres par genre, accès favoris et ajout |
+| **Détail**     | `/movie/:id` (name: `detail`)    | Affiche les infos complètes d'un film récupéré par son `id`                   |
+| **Formulaire** | `/form` (name: `form`)           | Ajoute un nouveau film avec validation de 5 champs                            |
+| **Favoris**    | `/favorites` (name: `favorites`) | Liste filtrée des films marqués comme favoris                                 |
 
 ## Widgets réutilisables (`lib/widgets/`)
 
@@ -108,7 +108,41 @@ Lancer les tests :
 
 ```bash
 flutter test
+# Ou lancer un test spécifique :
+flutter test test/movie_repository_test.dart
+flutter test test/movie_list_screen_test.dart
+flutter test test/filtered_movies_provider_test.dart
 ```
+
+## Dépannage
+
+### Erreur : `NoSuchMethodError` lors du chargement des films
+
+**Cause** : Le fichier `assets/data/movies.json` n'est pas déclaré dans `pubspec.yaml`.  
+**Solution** : Vérifier que la section `flutter.assets` contient :
+
+```yaml
+flutter:
+  assets:
+    - assets/data/movies.json
+```
+
+Puis relancer `flutter pub get` et `flutter run`.
+
+### Erreur : `Couldn't find constructor 'MyApp'`
+
+**Cause** : Anciens tests referençant une classe supprimée.  
+**Solution** : Mettre à jour les tests pour utiliser `MovieApp` à la place, enveloppée dans `ProviderScope`.
+
+### Écran noir après lancement
+
+**Cause** : Le binding Flutter n'est pas initialisé (surtout en tests).  
+**Solution** : Ajouter `TestWidgetsFlutterBinding.ensureInitialized();` au début de `main()` dans les tests.
+
+### Responsive ne s'active pas sur tablette
+
+**Cause** : Le breakpoint (600px) peut être insuffisant pour ton émulateur.  
+**Solution** : Réduire la valeur dans `lib/core/constants/breakpoints.dart` ou redimensionner la fenêtre.
 
 ## Pistes d'amélioration
 
